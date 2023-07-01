@@ -11,3 +11,5 @@ num2 = Number(num2);
 const Resultado = num1 + num2;
 
 const Resposta = alert(`O resultado da soma é  ${Resultado}`);
+
+alert('Obrigado 🐈')
