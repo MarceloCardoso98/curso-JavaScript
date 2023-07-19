@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exercícios aula 13</title>
+</head>
+<body>
+  
+  <script>
+
+  const nome = prompt('Digite seu nome completo: ');
+  const primLetra = prompt('Digite uma letra para achar a 1° posição em seu nome:');
+  const ultLetra = prompt ('Digite uma letra para achar a última posição em seu nome:');
+
+  const tamanho = nome.length;
+  const segundaLetra = nome.charAt(1);
+  const primIndice = nome.indexOf(primLetra, 0);
+  const ultIndice = nome.lastIndexOf(ultLetra, nome.length);
+  const ultTres = nome.slice(-3);
+  const separar = nome.split(' ');
+  const maiusculo = nome.toUpperCase(nome);
+  const minusculo = nome.toLowerCase(nome);
+
+  document.body.innerHTML += `Seu nome é: <strong>${nome}<strong/> <br />`;
+  document.body.innerHTML += `Seu nome tem <strong>${tamanho}<strong/> letras <br />`;
+  document.body.innerHTML += `A segunda letra do seu nome é: <strong>${segundaLetra}<strong/> <br />`;
+  document.body.innerHTML += `Qual o primeiro índice da letra <strong>"${primLetra}"<strong/> no seu nome? <strong>${primIndice}<strong/> <br />`;
+  document.body.innerHTML += `Qual o último índice da letra <strong>"${ultLetra}"<strong/> no seu nome? <strong>${ultIndice} <strong/> <br />`;
+  document.body.innerHTML += `As últimas 3 letras do seu nome são: <strong>${ultTres}<strong/> <br />`;
+  document.body.innerHTML += `As palavras do seu nome são: <strong>${separar}<strong/> <br />`;
+  document.body.innerHTML += `Seu nome com letras maiúsculas: <strong>${maiusculo}<strong/> <br />`;
+  document.body.innerHTML += `Seu nome com letras minúsculas: <strong>${minusculo}<strong/> <br />`;
+  </script>
+</body>
+</html>
